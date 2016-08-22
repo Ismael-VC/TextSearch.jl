@@ -1,7 +1,8 @@
 using TextSearch
 using Base.Test
 
-index_directory("../examples", ".jl")
+cd(Pkg.dir("TextSearch"))
+index_directory("examples", ".jl")
 
 @test S"∪" & S"∩" == Set(Union{ASCIIString,UTF8String}["..\\examples\\bazbar.jl"])
 @test S"∪" | S"end" == Set(Union{ASCIIString,UTF8String}["..\\examples\\qux.jl","..\\examples\\bar.jl","..\\examples\\foobarbaz.jl","..\\examples\\foo.jl","..\\examples\\foobar.jl","..\\examples\\bazbar.jl"])
