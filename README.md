@@ -10,3 +10,7 @@ INFO: Cloning TextSearch from https://github.com/Ismael-VC/TextSearch.jl
 INFO: Computing changes...
 INFO: No packages to install, update or remove
 ```
+
+## Documentation
+
+See: [`src/text_search.ipynb`](https://github.com/Ismael-VC/TextSearch.jl/blob/master/src/text_search.ipynb)
